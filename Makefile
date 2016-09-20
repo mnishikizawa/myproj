@@ -5,6 +5,7 @@ REVISION := $(shell git rev-parse --short HEAD)
 LDFLAGS := -X 'main.version=$(VERSION)' \
            -X 'main.revision=$(REVISION)'
 
+.DEFAULT_GOAL := help
 # 必要なツール類をセットアップする
 ## Setup
 setup:
